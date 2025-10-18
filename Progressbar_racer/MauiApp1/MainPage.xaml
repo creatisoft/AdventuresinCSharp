@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+    
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="22" Spacing="14">
+
+          <Label
+                x:Name="Label01"
+                Text="ProgressBar Racer!"
+                FontSize="42"
+                HorizontalTextAlignment="Center"
+
+            />
+
+
+            <Button
+                x:Name="StartButton"
+                Text="START"
+                BackgroundColor ="Green"
+                Clicked="OnStartClicked"
+
+            />
+
+            <Button
+                x:Name="StopButton"
+                Text="RESET"
+                BackgroundColor ="Red"
+
+                Clicked="OnStopClicked"
+            />
+
+            <ProgressBar
+
+                x:Name="ProgressBar01"
+                ProgressColor = "Crimson"
+                Progress =".0"
+                
+
+            />
+
+
+            <ProgressBar
+
+                x:Name="ProgressBar02"
+                ProgressColor = "#FF3A1E94"
+                Progress =".0"
+                
+
+            />
+
+
+
+            <Label
+                x:Name="Label02"
+                Text=""
+                FontSize="42"
+                HorizontalOptions ="Center"
+
+            />
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+
+</ContentPage>
